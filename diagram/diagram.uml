@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/pavel/Programming/Java/ITMO/Labs/Lab3/src</OriginalElement>
+  <nodes>
+    <node x="-53.00693945596038" y="835.9301310142814">s367292.lab3.people.Roman.Teeth</node>
+    <node x="668.5579100880677" y="823.9301310142814">s367292.lab3.room.roomThings</node>
+    <node x="1037.2674784684489" y="647.7056209118075">s367292.lab3.actions.intonations</node>
+    <node x="209.99306054403962" y="320.5832975525543">s367292.lab3.people.Roman</node>
+    <node x="368.85001367657406" y="693.1438950461996">s367292.lab3.actions.thinkActions</node>
+    <node x="279.18315961721066" y="119.72288652643772">s367292.lab3.people.speech.IVoiceControl</node>
+    <node x="539.0221480424826" y="-53.52192040394658">s367292.lab3.people.Human</node>
+    <node x="311.9930605440396" y="835.9301310142814">s367292.lab3.people.Roman.Eyebrows</node>
+    <node x="1174.9987054786836" y="480.87280260542707">s367292.lab3.people.Volodya</node>
+    <node x="770.8976287755183" y="211.97591703710646">s367292.lab3.people.Author</node>
+    <node x="645.9930605440396" y="659.7056209118075">s367292.lab3.people.Roman.Eye</node>
+    <node x="87.09998579027506" y="591.283765840586">s367292.lab3.Main</node>
+    <node x="106.59998579027506" y="823.9301310142814">s367292.lab3.people.Roman.Hand</node>
+    <node x="-83.00693945596038" y="591.283765840586">s367292.lab3.people.Roman.Head</node>
+    <node x="485.89973534031094" y="315.0447620501414">s367292.lab3.people.OldWoman</node>
+    <node x="822.3976287755183" y="659.7056209118075">s367292.lab3.people.Author.Head</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="96.99993945596037" y="-2.975525542296964E-4" />
+      <point x="445.0" y="422.583" />
+      <point x="445.0" y="273.5" />
+      <point x="744.0" y="273.5" />
+      <point x="744.0" y="48.977999999999994" />
+      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    </edge>
+    <edge source="s367292.lab3.people.Volodya" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="2.9452131639118306E-4" y="29.00019739457298" />
+      <point x="1254.999" y="576.476" />
+      <point x="744.0" y="576.476" />
+      <point x="744.0" y="48.977999999999994" />
+      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Eyebrows" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="-67.00006054403963" y="-1.3101428146455874E-4" />
+      <point x="288.0" y="877.43" />
+      <point x="288.0" y="568.0" />
+      <point x="306.993" y="568.0" />
+      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Hand" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="69.50001420972494" y="-1.3101428146455874E-4" />
+      <point x="288.0" y="877.43" />
+      <point x="288.0" y="568.0" />
+      <point x="306.993" y="568.0" />
+      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Eye" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="-6.054403957023169E-5" y="-41.49962091180748" />
+      <point x="702.993" y="568.0" />
+      <point x="306.993" y="568.0" />
+      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Head" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="-6.054403962707511E-5" y="-41.499765840586065" />
+      <point x="-17.007000000000005" y="568.0" />
+      <point x="306.993" y="568.0" />
+      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.speech.IVoiceControl" relationship="REALIZATION">
+      <point x="96.99993945596037" y="-15.00029755255423" />
+      <point x="425.0" y="407.583" />
+      <point x="425.0" y="303.083" />
+      <point x="376.183" y="303.083" />
+      <point x="-1.596172106985705E-4" y="65.5001134735623" />
+    </edge>
+    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.speech.IVoiceControl" relationship="REALIZATION">
+      <point x="-103.49973534031096" y="44.538237949858626" />
+      <point x="425.0" y="437.583" />
+      <point x="425.0" y="303.083" />
+      <point x="376.183" y="303.083" />
+      <point x="-1.596172106985705E-4" y="65.5001134735623" />
+    </edge>
+    <edge source="s367292.lab3.people.Author" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="-171.49962877551832" y="8.29628936003246E-5" />
+      <point x="744.0" y="385.476" />
+      <point x="744.0" y="48.977999999999994" />
+      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    </edge>
+    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="-103.49973534031096" y="2.379498586151385E-4" />
+      <point x="445.0" y="393.045" />
+      <point x="445.0" y="273.5" />
+      <point x="744.0" y="273.5" />
+      <point x="744.0" y="48.977999999999994" />
+      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Teeth" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="56.49993945596037" y="-41.500131014281465" />
+      <point x="66.493" y="568.0" />
+      <point x="306.993" y="568.0" />
+      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    </edge>
+    <edge source="s367292.lab3.people.Author.Head" target="s367292.lab3.people.Author" relationship="INNER_CLASS">
+      <point x="48.0" y="-41.5" />
+      <point x="-0.0" y="173.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6716417910447762" showDependencies="true" x="625.4999999999999" y="438.49999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
