@@ -10,15 +10,17 @@ public class Author extends Human{
     }
 
     public void watchOn(RoomThings thing){
-
+        actions.add("смотрел на " + thing.getName());
     }
 
-    public void wentTo(RoomThings thing){
-
+    public Author wentTo(RoomThings thing){
+        actions.add("подошёл к " + thing.getNameInDativeCase());
+        return this;
     }
 
-    public void pullBack(RoomThings thing){
-
+    public Author pullBack(RoomThings thing){
+        actions.add("отдёрнул " + thing.getNameInDativeCase());
+        return this;
     }
 
     public void leafe(RoomThings thing){

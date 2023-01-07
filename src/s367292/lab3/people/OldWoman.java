@@ -10,7 +10,7 @@ public class OldWoman extends Human implements VoiceControl {
 
     @Override
     public void babble(){
-        System.out.println("бубнила");
+        actions.add("бубнила");
     }
 
     @Override

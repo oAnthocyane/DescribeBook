@@ -1,32 +1,23 @@
 package s367292.lab3.people;
 
-import java.util.ArrayList;
-import java.util.List;
+import s367292.lab3.Essence;
 
-public abstract class Human {
-    protected String name;
+public class Human extends Essence {
     protected int voiceLevel;
-
-    protected List<String> actions;
-
     public Human(String name){
-        this.name = name;
+        super(name);
     }
 
     public Human(String name, int voiceLevel){
-        this(name);
+        super(name);
         this.voiceLevel = voiceLevel;
     }
 
     public void say(String phrase){
-        System.out.println("- " + phrase + " - сказал " + this.name);
+        System.out.println("- " + phrase + " - сказал " + this.name + ".");
     }
 
-    public void describe(){
-        String ans = this.name + " " + String.join(", ", actions) + ".";
-        System.out.println(ans);
-        actions = new ArrayList<String>();
-    }
+
 
     public String getName(){
         return this.name;

@@ -1,9 +1,8 @@
 package s367292.lab3.people;
 
 import s367292.lab3.people.speech.VoiceControl;
+import s367292.lab3.room.RoomThings;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Roman extends Human implements VoiceControl {
 
@@ -20,7 +19,7 @@ public class Roman extends Human implements VoiceControl {
         eyes = new Eyes();
         teeth = new Teeth();
         head = new Head();
-        actions = new ArrayList<String>();
+
 
     }
 
@@ -30,16 +29,18 @@ public class Roman extends Human implements VoiceControl {
 
     @Override
     public void babble(){
-        System.out.println("бубнил");
+        actions.add("бубнил");
     }
 
     @Override
     public void increaceVoice(){
         this.voiceLevel++;
+        actions.add("повысил голос");
     }
     @Override
     public void reductionVoice(){
         this.voiceLevel--;
+        actions.add("понизил голос");
     }
     @Override
     public void setVoiceLevel(int voiceLevel){
@@ -68,6 +69,11 @@ public class Roman extends Human implements VoiceControl {
     public Roman grindTeeth(){
         actions.add(teeth.grind());
         return this;
+    }
+
+
+    public void sayBehind(String phrase, RoomThings place){
+        System.out.println("- " + phrase + " - сказал за " + place.getNameInInstrumentalCase() + " " + this.name + ".");
     }
 
     class Eyebrows{
