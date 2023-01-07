@@ -1,6 +1,6 @@
 package s367292.lab3.room;
 
-public enum roomThings {
+public enum RoomThings {
 
     FURNITURE,
     TABLE,

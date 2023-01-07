@@ -1,8 +1,28 @@
 package s367292.lab3.people;
 
-import s367292.lab3.people.speech.IVoiceControl;
+import s367292.lab3.people.speech.VoiceControl;
 
-public class Roman extends Human implements IVoiceControl {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Roman extends Human implements VoiceControl {
+
+    private Eyebrows eyebrows;
+    private Eyes eyes;
+    private Teeth teeth;
+
+    private Head head;
+
+
+
+    {
+        eyebrows = new Eyebrows();
+        eyes = new Eyes();
+        teeth = new Teeth();
+        head = new Head();
+        actions = new ArrayList<String>();
+
+    }
 
     public Roman(String name, int voiceLevel){
         super(name, voiceLevel);
@@ -26,35 +46,78 @@ public class Roman extends Human implements IVoiceControl {
         this.voiceLevel = voiceLevel;
     }
 
+
     public void smile(){
 
     }
 
 
-    public void wentOut(){
-        System.out.println("вышел");
+    public void wentOut(String prefix){
+        actions.add(prefix + " " + "вышел");
+    }
+
+    public Roman raiseEyebrows(){
+        actions.add(eyebrows.raise());
+        return this;
+    }
+    public Roman rollEyes(){
+        actions.add(eyes.roll());
+        return this;
+    }
+
+    public Roman grindTeeth(){
+        actions.add(teeth.grind());
+        return this;
     }
 
     class Eyebrows{
-        public void raise(){
-            System.out.println("поднял брови");
+
+        enum Status{
+            NORMAL,
+            RAISED
+        }
+
+        private Status status = Status.NORMAL;
+        public String raise(){
+            status = Status.RAISED;
+            return "поднял брови";
         }
     }
 
-    class Eye{
-        public void roll(){
-            System.out.println("закатил глаза");
+    public Roman shookHand(){
+        actions.add(head.shook());
+        return this;
+    }
+
+
+    class Eyes{
+        enum Status{
+            NORMAL,
+            ROLLED
+        }
+        Status status = Status.NORMAL;
+
+        public String roll(){
+            status = Status.ROLLED;
+            return "закатил глаза";
         }
     }
 
     class Teeth{
-        public void grind(){
-            System.out.println("оскалил зубы");
+        enum Status{
+            NORMAl,
+            GRITTED
+        }
+
+        private Status status = Status.NORMAl;
+        public String grind(){
+            status = Status.GRITTED;
+            return "оскалил зубы";
         }
     }
     class Head{
-        public void shook(){
-            System.out.println("потряс головой");
+        public String shook(){
+            return "потряс головой";
         }
     }
 

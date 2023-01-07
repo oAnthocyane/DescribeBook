@@ -2,7 +2,7 @@ package s367292.lab3.actions;
 
 import s367292.lab3.people.Human;
 
-public enum thinkActions {
+public enum ThinkActions {
     SLEEP,
     DRIVECAR(){
         public void driveCar(int time){
