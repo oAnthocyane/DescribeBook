@@ -1,29 +1,24 @@
-package s367292.lab3.room;
+package s367292.lab3.room.things;
 
-
-import s367292.lab3.people.speech.VoiceControl;
 
 public enum RoomThings {
 
-    FURNITURE("мебель"),
+    ROOM("комнат"),
     WINDOW("окно"),
-    //TABLE,
-    //TABLECLOTH,
-    //STOOL,
     SOFA("диван"),
-    //WALLPAPER,
-    //HANGER,
-    //COTTONJACKETS,
-    //COATS,
-    //CAPS,
-    //EARFLAPS,
-    //STOVE,
-    //MIRROR,
-    //FLOOR,
-    //BOOK,
     WALL("стена"),
     WINDOWSILL("подоконник"),
     TRESHOLD("порог"),
+    ANOTHERWALL("другой стена"),
+    JUNK("рухлядью"),
+    WADERS("ватники"),
+    CORNER("углы"),
+    POPPEDCOATS("вылезшие шубы"),
+    TATTEREDCAPS("драные кепки"),
+    EARFLAPS("ушанки"),
+    FRESHWASH("свежей побелкой"),
+    SHABBYFRAME("облезлой раме"),
+    STRIPEDMATS("полосатыми половиками"),
     CURTAIN("занавеска");
 
     private String name;
@@ -48,8 +43,11 @@ public enum RoomThings {
     public String getNameInPrepositionalCase(){
         return this.name + "е";
     }
-    public String getNameInGenitiveCase(){
+    public String getNameInGenitiveCaseM(){
         return this.name.substring(0, this.name.length()-1) + "а";
+    }
+    public String getNameInGenitiveCaseW(){
+        return this.name.substring(0, this.name.length()-1) + "ы";
     }
 
 }

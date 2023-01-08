@@ -1,7 +1,7 @@
 package s367292.lab3.people;
 
 import s367292.lab3.people.speech.VoiceControl;
-import s367292.lab3.room.RoomThings;
+import s367292.lab3.room.things.RoomThings;
 
 
 public class Roman extends Human implements VoiceControl {

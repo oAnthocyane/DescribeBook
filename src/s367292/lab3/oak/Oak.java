@@ -1,7 +1,7 @@
 package s367292.lab3.oak;
 
 import s367292.lab3.Essence;
-import s367292.lab3.room.RoomThings;
+import s367292.lab3.room.things.RoomThings;
 
 public class Oak extends Essence {
 

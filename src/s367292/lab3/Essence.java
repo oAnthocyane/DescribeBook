@@ -33,7 +33,7 @@ public abstract class Essence {
     }
 
     public String getNameInInstrumentalCaseW(){
-        return this.name.substring(0, this.name.length()-1) + "ой";
+        return this.name.substring(0, this.name.length()-2) + "ой";
     }
     public String getNameInInstrumentalCaseM(){
         return this.name.substring(0, this.name.length()-1) + "ом";

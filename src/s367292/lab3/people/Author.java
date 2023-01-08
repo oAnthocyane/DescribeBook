@@ -3,7 +3,7 @@ package s367292.lab3.people;
 import s367292.lab3.Essence;
 import s367292.lab3.actions.Intonations;
 import s367292.lab3.actions.ThinkActions;
-import s367292.lab3.room.RoomThings;
+import s367292.lab3.room.things.RoomThings;
 
 public class Author extends Human{
 
@@ -18,9 +18,14 @@ public class Author extends Human{
         super(name);
     }
 
+    public void lookAround(){
+        actions.add("осмотрелся");
+    }
+
     public void watchOn(Essence thing){
         actions.add("смотрел на " + thing.getName());
     }
+
 
     public void wentTo(RoomThings thing){
         actions.add("подошёл к " + thing.getNameInDativeCase());
@@ -36,7 +41,7 @@ public class Author extends Human{
     }
 
     public void stepBackFrom(RoomThings thing){
-        actions.add("отошёл от " + thing.getNameInGenitiveCase());
+        actions.add("отошёл от " + thing.getNameInGenitiveCaseM());
 
     }
 

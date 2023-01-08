@@ -8,9 +8,10 @@ import s367292.lab3.people.Human;
 import s367292.lab3.people.OldWoman;
 import s367292.lab3.people.Roman;
 import s367292.lab3.oak.Bark;
-import s367292.lab3.room.Book;
+import s367292.lab3.room.things.Book;
 import s367292.lab3.oak.Oak;
-import s367292.lab3.room.RoomThings;
+import s367292.lab3.room.things.RoomThings;
+import s367292.lab3.room.things.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +19,15 @@ public class Main {
         Roman roman = new Roman("Роман", 5);
         OldWoman oldWoman = new OldWoman("старуха", 5);
         Author author = new Author("Я");
+        Furniture furniture = new Furniture("Мебели");
+        Table table = new Table("стол", "массивный");
+        TableCloth tableCloth = new TableCloth("скатертью", "ветхой", "серой", "бахромой");
+        Chair chair = new Chair("табурет", "колченогий");
+        Sofa sofa = new Sofa("диван", "обширный");
+        Hanger hanger = new Hanger("вешалка");
+        Oven oven = new Oven("печь", "большая", "русская");
+        Mirror mirror = new Mirror("зеркало", "большое", "мутное");
+        Floor floor = new Floor("Пол");
         Book book = new Book("Книга", "засаленная", "пухлая");
         Oak oak = new Oak("Дуб", "очень древнее", "растение");
         Bark bark = new Bark("Кора", "серая", "мёртвая");
@@ -35,10 +45,30 @@ public class Main {
         roman.shookHand();
         roman.wentOut("но всё-таки");
         roman.describe();
-
-        /**
-         * Я осмотрелся на различную мебель???? Реализация просто через watchOn?
-         */
+        author.lookAround();
+        author.describe();
+        furniture.was(RoomThings.ROOM, 4);
+        furniture.describe();
+        table.stayAt(RoomThings.WINDOW);
+        tableCloth.on(table);
+        table.describe();
+        tableCloth.describe();
+        chair.stayInFrontOf(table);
+        chair.describe();
+        sofa.loacateNear(RoomThings.WALL);
+        sofa.describe();
+        hanger.wasAt(RoomThings.ANOTHERWALL);
+        hanger.with(RoomThings.JUNK, RoomThings.WADERS, RoomThings.POPPEDCOATS,
+                RoomThings.TATTEREDCAPS, RoomThings.EARFLAPS);
+        hanger.describe();
+        oven.wentInto(RoomThings.ROOM);
+        oven.shine(RoomThings.FRESHWASH);
+        oven.describe();
+        mirror.hangInFrontOf(RoomThings.CORNER, RoomThings.SHABBYFRAME);
+        mirror.describe();
+        floor.scrape();
+        floor.cover(RoomThings.STRIPEDMATS);
+        floor.describe();
         System.out.println("\n");
 
         roman.babble();

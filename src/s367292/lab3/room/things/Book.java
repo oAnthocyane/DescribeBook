@@ -1,4 +1,4 @@
-package s367292.lab3.room;
+package s367292.lab3.room.things;
 
 import s367292.lab3.Essence;
 

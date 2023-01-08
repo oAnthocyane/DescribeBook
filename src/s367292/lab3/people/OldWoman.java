@@ -28,6 +28,6 @@ public class OldWoman extends Human implements VoiceControl {
 
     @Override
     public void say(String phrase){
-        System.out.println("- " + phrase + " - сказала " + this.name);
+        System.out.println("- " + phrase + " - сказала " + this.name + ".");
     }
 }
