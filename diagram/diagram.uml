@@ -3,106 +3,224 @@
   <ID>JAVA</ID>
   <OriginalElement>/home/pavel/Programming/Java/ITMO/Labs/Lab3/src</OriginalElement>
   <nodes>
-    <node x="-53.00693945596038" y="835.9301310142814">s367292.lab3.people.Roman.Teeth</node>
-    <node x="668.5579100880677" y="823.9301310142814">s367292.lab3.room.roomThings</node>
-    <node x="1037.2674784684489" y="647.7056209118075">s367292.lab3.actions.intonations</node>
-    <node x="209.99306054403962" y="320.5832975525543">s367292.lab3.people.Roman</node>
-    <node x="368.85001367657406" y="693.1438950461996">s367292.lab3.actions.thinkActions</node>
-    <node x="279.18315961721066" y="119.72288652643772">s367292.lab3.people.speech.IVoiceControl</node>
-    <node x="539.0221480424826" y="-53.52192040394658">s367292.lab3.people.Human</node>
-    <node x="311.9930605440396" y="835.9301310142814">s367292.lab3.people.Roman.Eyebrows</node>
-    <node x="1174.9987054786836" y="480.87280260542707">s367292.lab3.people.Volodya</node>
-    <node x="770.8976287755183" y="211.97591703710646">s367292.lab3.people.Author</node>
-    <node x="645.9930605440396" y="659.7056209118075">s367292.lab3.people.Roman.Eye</node>
-    <node x="87.09998579027506" y="591.283765840586">s367292.lab3.Main</node>
-    <node x="106.59998579027506" y="823.9301310142814">s367292.lab3.people.Roman.Hand</node>
-    <node x="-83.00693945596038" y="591.283765840586">s367292.lab3.people.Roman.Head</node>
-    <node x="485.89973534031094" y="315.0447620501414">s367292.lab3.people.OldWoman</node>
-    <node x="822.3976287755183" y="659.7056209118075">s367292.lab3.people.Author.Head</node>
+    <node x="1489.8166518266535" y="495.8926620704374">s367292.lab3.room.things.Floor</node>
+    <node x="1713.5094416777513" y="291.5363281957712">s367292.lab3.room.things.Furniture</node>
+    <node x="54.13012601110211" y="1005.2803380217913">s367292.lab3.people.Roman.Eyebrows</node>
+    <node x="2592.1898386471667" y="898.7728766742812">s367292.lab3.room.things.Oven</node>
+    <node x="945.4982849523062" y="357.86244414922623">s367292.lab3.people.speech.VoiceControl</node>
+    <node x="1208.0449269817914" y="501.58386731421035">s367292.lab3.room.things.Table</node>
+    <node x="247.7974147109138" y="644.8059231844394">s367292.lab3.oak.Roots</node>
+    <node x="1250.6753148126427" y="133.1050668487252">s367292.lab3.Essence</node>
+    <node x="-26.953726322272786" y="825.5120028848416">s367292.lab3.oak.Bark</node>
+    <node x="2204.3819272844835" y="725.0870249679222">s367292.lab3.room.things.TableCloth</node>
+    <node x="-84.91520449331114" y="150.32648806020524">s367292.lab3.people.Author.Back</node>
+    <node x="658.4524153240723" y="201.0949727314595">s367292.lab3.people.Human</node>
+    <node x="1770.908787939014" y="496.05618554843556">s367292.lab3.room.things.Hanger</node>
+    <node x="945.6775367322716" y="1182.1626304378144">s367292.lab3.people.Roman.Eyes.Status</node>
+    <node x="23.130126011102107" y="1139.2803380217913">s367292.lab3.people.Roman.Eyebrows.Status</node>
+    <node x="581.1301260111021" y="483.1626304378144">s367292.lab3.people.Roman</node>
+    <node x="279.4585654590242" y="967.2803380217913">s367292.lab3.actions.ThinkActions</node>
+    <node x="636.1301260111021" y="910.7728766742812">s367292.lab3.people.Roman.Hand</node>
+    <node x="94.08479550668886" y="-53.673511939794736">s367292.lab3.people.Author</node>
+    <node x="1291.4619395494021" y="839.4170885890676">s367292.lab3.Main</node>
+    <node x="940.6775367322716" y="569.1723150885747">s367292.lab3.people.OldWoman</node>
+    <node x="981.6775367322716" y="1048.1626304378144">s367292.lab3.people.Roman.Eyes</node>
+    <node x="230.08479550668886" y="507.8926620704374">s367292.lab3.people.Author.Head</node>
+    <node x="395.1301260111021" y="825.5120028848416">s367292.lab3.people.Roman.Head</node>
+    <node x="2380.580848236023" y="520.8401825898876">s367292.lab3.room.things.Book</node>
+    <node x="301.45856545902416" y="1308.1626304378144">s367292.lab3.people.Roman.Teeth.Status</node>
+    <node x="1270.1658050057056" y="670.3995194477158">s367292.lab3.room.things.Sofa</node>
+    <node x="1620.8109991480537" y="664.8720031538641">s367292.lab3.room.things.Chair</node>
+    <node x="978.6109956197852" y="847.3354530062223">s367292.lab3.actions.Intonations</node>
+    <node x="626.904138346281" y="1178.8576555649406">s367292.lab3.room.things.RoomThings</node>
+    <node x="331.45856545902416" y="1174.1626304378144">s367292.lab3.people.Roman.Teeth</node>
+    <node x="2001.1197464994216" y="929.7168875441591">s367292.lab3.room.things.Mirror</node>
+    <node x="-98.9346116216804" y="597.5878506811231">s367292.lab3.oak.Oak</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
-      <point x="96.99993945596037" y="-2.975525542296964E-4" />
-      <point x="445.0" y="422.583" />
-      <point x="445.0" y="273.5" />
-      <point x="744.0" y="273.5" />
-      <point x="744.0" y="48.977999999999994" />
-      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    <edge source="s367292.lab3.room.things.Mirror" target="s367292.lab3.room.things.Oven" relationship="GENERALIZATION">
+      <point x="184.5" y="-6.944010869877957" />
+      <point x="-119.0" y="0.0" />
     </edge>
-    <edge source="s367292.lab3.people.Volodya" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
-      <point x="2.9452131639118306E-4" y="29.00019739457298" />
-      <point x="1254.999" y="576.476" />
-      <point x="744.0" y="576.476" />
-      <point x="744.0" y="48.977999999999994" />
-      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+    <edge source="s367292.lab3.oak.Oak" target="s367292.lab3.Essence" relationship="GENERALIZATION">
+      <point x="119.4996116216804" y="-36.281850681123046" />
+      <point x="563.63" y="627.306" />
+      <point x="563.63" y="111.0" />
+      <point x="1593.5" y="111.0" />
+      <point x="1593.5" y="460.0" />
+      <point x="1387.175" y="460.0" />
+      <point x="-3.1481264272770204E-4" y="139.99993315127483" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Oven" target="s367292.lab3.room.things.Furniture" relationship="GENERALIZATION">
+      <point x="1.6135283340190654E-4" y="-65.99987667428115" />
+      <point x="2711.19" y="866.0" />
+      <point x="2019.5" y="866.0" />
+      <point x="2019.5" y="638.0" />
+      <point x="1753.409" y="638.0" />
+      <point x="-75.10044167775118" y="65.9996718042288" />
     </edge>
     <edge source="s367292.lab3.people.Roman.Eyebrows" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
-      <point x="-67.00006054403963" y="-1.3101428146455874E-4" />
-      <point x="288.0" y="877.43" />
-      <point x="288.0" y="568.0" />
-      <point x="306.993" y="568.0" />
-      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+      <point x="67.49987398889789" y="-3.3802179132180754E-4" />
+      <point x="261.959" y="1047.28" />
+      <point x="261.959" y="1154.0" />
+      <point x="560.0" y="1154.0" />
+      <point x="560.0" y="670.163" />
+      <point x="-149.5001260111021" y="3.6956218559680565E-4" />
     </edge>
-    <edge source="s367292.lab3.people.Roman.Hand" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
-      <point x="69.50001420972494" y="-1.3101428146455874E-4" />
-      <point x="288.0" y="877.43" />
-      <point x="288.0" y="568.0" />
-      <point x="306.993" y="568.0" />
-      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.speech.VoiceControl" relationship="REALIZATION">
+      <point x="149.4998739888979" y="125.73736956218556" />
+      <point x="1165.178" y="795.9" />
+      <point x="1165.178" y="530.0" />
+      <point x="1042.498" y="530.0" />
+      <point x="-2.8495230617409106E-4" y="65.99955585077373" />
     </edge>
-    <edge source="s367292.lab3.people.Roman.Eye" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
-      <point x="-6.054403957023169E-5" y="-41.49962091180748" />
-      <point x="702.993" y="568.0" />
-      <point x="306.993" y="568.0" />
-      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    <edge source="s367292.lab3.oak.Roots" target="s367292.lab3.oak.Oak" relationship="GENERALIZATION">
+      <point x="-122.00041471091379" y="7.681556064653705E-5" />
+      <point x="228.0" y="698.806" />
+      <point x="228.0" y="663.588" />
+      <point x="119.4996116216804" y="1.4931887687907874E-4" />
     </edge>
-    <edge source="s367292.lab3.people.Roman.Head" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
-      <point x="-6.054403962707511E-5" y="-41.499765840586065" />
-      <point x="-17.007000000000005" y="568.0" />
-      <point x="306.993" y="568.0" />
-      <point x="-6.054403962707511E-5" y="101.99970244744566" />
-    </edge>
-    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.speech.IVoiceControl" relationship="REALIZATION">
-      <point x="96.99993945596037" y="-15.00029755255423" />
-      <point x="425.0" y="407.583" />
-      <point x="425.0" y="303.083" />
-      <point x="376.183" y="303.083" />
-      <point x="-1.596172106985705E-4" y="65.5001134735623" />
-    </edge>
-    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.speech.IVoiceControl" relationship="REALIZATION">
-      <point x="-103.49973534031096" y="44.538237949858626" />
-      <point x="425.0" y="437.583" />
-      <point x="425.0" y="303.083" />
-      <point x="376.183" y="303.083" />
-      <point x="-1.596172106985705E-4" y="65.5001134735623" />
+    <edge source="s367292.lab3.people.Roman.Eyebrows.Status" target="s367292.lab3.people.Roman.Eyebrows" relationship="INNER_CLASS">
+      <point x="0.0" y="-54.0" />
+      <point x="0.0" y="42.0" />
     </edge>
     <edge source="s367292.lab3.people.Author" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
-      <point x="-171.49962877551832" y="8.29628936003246E-5" />
-      <point x="744.0" y="385.476" />
-      <point x="744.0" y="48.977999999999994" />
-      <point x="88.99985195751742" y="-7.959605341056886E-5" />
+      <point x="2.0449331111649371E-4" y="245.99951193979476" />
+      <point x="307.585" y="461.0" />
+      <point x="747.452" y="461.0" />
+      <point x="-4.1532407226441137E-4" y="80.00002726854052" />
     </edge>
-    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
-      <point x="-103.49973534031096" y="2.379498586151385E-4" />
-      <point x="445.0" y="393.045" />
-      <point x="445.0" y="273.5" />
-      <point x="744.0" y="273.5" />
-      <point x="744.0" y="48.977999999999994" />
-      <point x="88.99985195751742" y="-7.959605341056886E-5" />
-    </edge>
-    <edge source="s367292.lab3.people.Roman.Teeth" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
-      <point x="56.49993945596037" y="-41.500131014281465" />
-      <point x="66.493" y="568.0" />
-      <point x="306.993" y="568.0" />
-      <point x="-6.054403962707511E-5" y="101.99970244744566" />
+    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.speech.VoiceControl" relationship="REALIZATION">
+      <point x="4.6326772849170084E-4" y="-91.00031508857467" />
+      <point x="1044.178" y="530.0" />
+      <point x="1042.498" y="530.0" />
+      <point x="-2.8495230617409106E-4" y="65.99955585077373" />
     </edge>
     <edge source="s367292.lab3.people.Author.Head" target="s367292.lab3.people.Author" relationship="INNER_CLASS">
-      <point x="48.0" y="-41.5" />
-      <point x="-0.0" y="173.5" />
+      <point x="-77.49979550668886" y="3.379295626473322E-4" />
+      <point x="74.0" y="549.893" />
+      <point x="74.0" y="192.326" />
+      <point x="-213.49979550668888" y="-4.8806020527081273E-4" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Table" target="s367292.lab3.room.things.Furniture" relationship="GENERALIZATION">
+      <point x="7.301820869543008E-5" y="54.000132685789595" />
+      <point x="1318.545" y="638.0" />
+      <point x="1753.409" y="638.0" />
+      <point x="-75.10044167775118" y="65.9996718042288" />
+    </edge>
+    <edge source="s367292.lab3.people.Human" target="s367292.lab3.Essence" relationship="GENERALIZATION">
+      <point x="-4.1532407226441137E-4" y="-79.99997273145948" />
+      <point x="747.452" y="111.0" />
+      <point x="1593.5" y="111.0" />
+      <point x="1593.5" y="460.0" />
+      <point x="1387.175" y="460.0" />
+      <point x="-3.1481264272770204E-4" y="139.99993315127483" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Hanger" target="s367292.lab3.room.things.Furniture" relationship="GENERALIZATION">
+      <point x="2.120609860867262E-4" y="53.999814451564475" />
+      <point x="2043.909" y="638.0" />
+      <point x="1753.409" y="638.0" />
+      <point x="-75.10044167775118" y="65.9996718042288" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Eyes" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="4.6326772849170084E-4" y="42.0003695621856" />
+      <point x="1044.178" y="1154.0" />
+      <point x="560.0" y="1154.0" />
+      <point x="560.0" y="670.163" />
+      <point x="-149.5001260111021" y="3.6956218559680565E-4" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Head" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="71.49987398889789" y="-2.8848417059634812E-6" />
+      <point x="560.0" y="867.512" />
+      <point x="560.0" y="670.163" />
+      <point x="-149.5001260111021" y="3.6956218559680565E-4" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Teeth.Status" target="s367292.lab3.people.Roman.Teeth" relationship="INNER_CLASS">
+      <point x="0.0" y="-54.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Floor" target="s367292.lab3.room.things.Furniture" relationship="GENERALIZATION">
+      <point x="3.4817334653780563E-4" y="54.00033792956265" />
+      <point x="1596.817" y="638.0" />
+      <point x="1753.409" y="638.0" />
+      <point x="-75.10044167775118" y="65.9996718042288" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Sofa" target="s367292.lab3.room.things.Table" relationship="GENERALIZATION">
+      <point x="1.9499429436109494E-4" y="-53.999519447715784" />
+      <point x="1400.166" y="655.0" />
+      <point x="1303.545" y="655.0" />
+      <point x="-14.999926981791305" y="54.000132685789595" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Teeth" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="4.345409758457208E-4" y="-41.9996304378144" />
+      <point x="399.959" y="1154.0" />
+      <point x="560.0" y="1154.0" />
+      <point x="560.0" y="670.163" />
+      <point x="-149.5001260111021" y="3.6956218559680565E-4" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="-1.260111021110788E-4" y="-186.9996304378144" />
+      <point x="730.63" y="461.0" />
+      <point x="747.452" y="461.0" />
+      <point x="-4.1532407226441137E-4" y="80.00002726854052" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Book" target="s367292.lab3.Essence" relationship="GENERALIZATION">
+      <point x="1.5176397710092715E-4" y="-42.00018258988757" />
+      <point x="2500.081" y="460.0" />
+      <point x="1387.175" y="460.0" />
+      <point x="-3.1481264272770204E-4" y="139.99993315127483" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Hand" target="s367292.lab3.people.Roman" relationship="INNER_CLASS">
+      <point x="-94.50012601110211" y="1.233257188459902E-4" />
+      <point x="560.0" y="964.773" />
+      <point x="560.0" y="670.163" />
+      <point x="-149.5001260111021" y="3.6956218559680565E-4" />
+    </edge>
+    <edge source="s367292.lab3.people.Author.Back" target="s367292.lab3.people.Author" relationship="INNER_CLASS">
+      <point x="68.50020449331113" y="-4.88060205242391E-4" />
+      <point x="-213.49979550668888" y="-4.8806020527081273E-4" />
+    </edge>
+    <edge source="s367292.lab3.people.OldWoman" target="s367292.lab3.people.Human" relationship="GENERALIZATION">
+      <point x="-103.49953673227162" y="-3.1508857466633344E-4" />
+      <point x="917.404" y="660.172" />
+      <point x="917.404" y="461.0" />
+      <point x="747.452" y="461.0" />
+      <point x="-4.1532407226441137E-4" y="80.00002726854052" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Furniture" target="s367292.lab3.Essence" relationship="GENERALIZATION">
+      <point x="-4.416777512687986E-4" y="65.9996718042288" />
+      <point x="1828.509" y="460.0" />
+      <point x="1387.175" y="460.0" />
+      <point x="-3.1481264272770204E-4" y="139.99993315127483" />
+    </edge>
+    <edge source="s367292.lab3.room.things.Chair" target="s367292.lab3.room.things.Table" relationship="GENERALIZATION">
+      <point x="-124.9999991480538" y="-3.1538640996586764E-6" />
+      <point x="1547.666" y="706.872" />
+      <point x="1547.666" y="655.0" />
+      <point x="1303.545" y="655.0" />
+      <point x="-14.999926981791305" y="54.000132685789595" />
+    </edge>
+    <edge source="s367292.lab3.people.Roman.Eyes.Status" target="s367292.lab3.people.Roman.Eyes" relationship="INNER_CLASS">
+      <point x="15.000463267728492" y="-54.0" />
+      <point x="15.000463267728492" y="42.0" />
+    </edge>
+    <edge source="s367292.lab3.oak.Bark" target="s367292.lab3.oak.Oak" relationship="GENERALIZATION">
+      <point x="117.49972632227278" y="-2.8848417059634812E-6" />
+      <point x="228.0" y="867.512" />
+      <point x="228.0" y="663.588" />
+      <point x="119.4996116216804" y="1.4931887687907874E-4" />
+    </edge>
+    <edge source="s367292.lab3.room.things.TableCloth" target="s367292.lab3.room.things.Furniture" relationship="GENERALIZATION">
+      <point x="7.271551658050157E-5" y="53.99997503207783" />
+      <point x="2367.882" y="866.0" />
+      <point x="2019.5" y="866.0" />
+      <point x="2019.5" y="638.0" />
+      <point x="1753.409" y="638.0" />
+      <point x="-75.10044167775118" y="65.9996718042288" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.6716417910447762" showDependencies="true" x="625.4999999999999" y="438.49999999999994" />
+  <settings layout="Hierarchic" zoom="0.43352601156069365" showDependencies="false" x="1366.0" y="714.5" />
   <SelectedNodes />
   <Categories>
     <Category>Constructors</Category>

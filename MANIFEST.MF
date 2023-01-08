@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: s367292/lab3/Main

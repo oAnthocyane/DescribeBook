@@ -146,5 +146,6 @@ public class Main {
         author.sayGoodbyeWith(volodya);
         author.lay();
         author.describe();
+        System.out.println("\n");
     }
 }
