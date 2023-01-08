@@ -3,26 +3,30 @@ package s367292.lab3.actions;
 import s367292.lab3.people.Human;
 
 public enum ThinkActions {
-    SLEEP,
-    DRIVECAR(){
-        public void driveCar(int time){
+    SLEEP("спать"),
+    RUSH("так торопиться"),
 
-        }
-    },
+    DRIVECARTODAY("вёл сегодня машину"),
 
-    NOTRUSH,
-    HURTSBACK,
-    NOTCARE(){
-        public void dontCareOn(Human human){
+    FASTERALLEND("скорей бы всё кончилось"),
+    LAY("лечь"),
+    GOSLEEP("заснуть"),
+    CONDUCT("проводить");
 
-        }
-    },
-    ALLEND,
-    LAY,
-    CONDUCT,
+    /*LAY,
+    ,
     GOODBYE(){
         public void sayGoodbyeWith(Human human){
 
         }
+    }*/
+
+    private String name;
+    ThinkActions(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }

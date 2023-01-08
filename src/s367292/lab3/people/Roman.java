@@ -9,8 +9,8 @@ public class Roman extends Human implements VoiceControl {
     private Eyebrows eyebrows;
     private Eyes eyes;
     private Teeth teeth;
-
     private Head head;
+    private Hand hand;
 
 
 
@@ -19,6 +19,7 @@ public class Roman extends Human implements VoiceControl {
         eyes = new Eyes();
         teeth = new Teeth();
         head = new Head();
+        hand = new Hand("растопыренными", "измазанными чернилами");
 
 
     }
@@ -49,6 +50,7 @@ public class Roman extends Human implements VoiceControl {
 
 
     public void smile(){
+        actions.add("улыбнулся");
 
     }
 
@@ -57,23 +59,33 @@ public class Roman extends Human implements VoiceControl {
         actions.add(prefix + " " + "вышел");
     }
 
-    public Roman raiseEyebrows(){
+    public void raiseEyebrows(){
         actions.add(eyebrows.raise());
-        return this;
     }
-    public Roman rollEyes(){
+    public void rollEyes(){
         actions.add(eyes.roll());
-        return this;
     }
 
-    public Roman grindTeeth(){
+    public void grindTeeth(){
         actions.add(teeth.grind());
-        return this;
     }
 
 
-    public void sayBehind(String phrase, RoomThings place){
-        System.out.println("- " + phrase + " - сказал за " + place.getNameInInstrumentalCase() + " " + this.name + ".");
+    public void say(String phrase, String where, RoomThings place){
+        String placeCase = null;
+        if(where.equals("за")) placeCase = place.getNameInInstrumentalCaseW();
+        else if(where.equals("на")) placeCase = place.getNameInPrepositionalCase();
+        System.out.println("- " + phrase + " - сказал " + where + " " + placeCase + " " + this.name + ".");
+    }
+
+
+
+    public void wiggleHand(){
+        actions.add(hand.wiggle());
+    }
+
+    public void waveHand(){
+        actions.add(hand.wave());
     }
 
     class Eyebrows{
@@ -90,9 +102,8 @@ public class Roman extends Human implements VoiceControl {
         }
     }
 
-    public Roman shookHand(){
+    public void shookHand(){
         actions.add(head.shook());
-        return this;
     }
 
 
@@ -128,17 +139,20 @@ public class Roman extends Human implements VoiceControl {
     }
 
     class Hand{
-        private String fingType;
-        public Hand(String fingType){
-            this.fingType = fingType;
+        private String fingType1, fingType2;
+        public Hand(String fingType1, String fingType2){
+            this.fingType1 = fingType1;
+            this.fingType2 = fingType2;
         }
 
-        public void wiggle(){
-            System.out.println("помотал рукой с " + this.fingType);
+        public String wiggle(){
+            return "помотал рукой с " + this.fingType1 + " пальцами, " + this.fingType2;
         }
-        public void wave(){
 
+        public String wave(){
+            return "махнул рукой";
         }
+
     }
 
 

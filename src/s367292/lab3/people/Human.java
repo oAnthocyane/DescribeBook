@@ -19,9 +19,8 @@ public class Human extends Essence {
 
 
 
-    public String getName(){
-        return this.name;
-    }
+
+
 
     public int getVoiceLevel(){
         return this.voiceLevel;

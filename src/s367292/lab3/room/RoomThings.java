@@ -1,5 +1,8 @@
 package s367292.lab3.room;
 
+
+import s367292.lab3.people.speech.VoiceControl;
+
 public enum RoomThings {
 
     FURNITURE("мебель"),
@@ -7,7 +10,7 @@ public enum RoomThings {
     //TABLE,
     //TABLECLOTH,
     //STOOL,
-    //SOFA,
+    SOFA("диван"),
     //WALLPAPER,
     //HANGER,
     //COTTONJACKETS,
@@ -19,12 +22,13 @@ public enum RoomThings {
     //FLOOR,
     //BOOK,
     WALL("стена"),
-    OAK("дуб"),
     WINDOWSILL("подоконник"),
+    TRESHOLD("порог"),
     CURTAIN("занавеска");
 
     private String name;
-    RoomThings(String name){
+
+    RoomThings(String name) {
         this.name = name;
     }
     public String getName(){
@@ -35,12 +39,20 @@ public enum RoomThings {
         return this.name.substring(0, this.name.length()-1) + "у";
     }
 
-    public String getNameInInstrumentalCase(){
+    public String getNameInInstrumentalCaseW(){
         return this.name.substring(0, this.name.length()-1) + "ой";
+    }
+    public String getNameInInstrumentalCaseM(){
+        return this.name.substring(0, this.name.length()-1) + "ом";
     }
     public String getNameInPrepositionalCase(){
         return this.name + "е";
     }
-
+    public String getNameInGenitiveCase(){
+        return this.name.substring(0, this.name.length()-1) + "а";
+    }
 
 }
+
+
+
