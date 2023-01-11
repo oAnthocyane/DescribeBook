@@ -2,6 +2,8 @@ package s367292.lab3.room.things;
 
 import s367292.lab3.Essence;
 
+import java.util.ArrayList;
+
 public class Furniture extends Essence {
 
     protected String status;
@@ -17,6 +19,13 @@ public class Furniture extends Essence {
     public void was(RoomThings place, int count){
         String stringCount = toStringCount(count);
         actions.add("в " + place.getNameInPrepositionalCase() + " было " + stringCount);
+    }
+
+    @Override
+    public void describe(){
+        String ans = this.name + " " + String.join(", ", actions) + ". ";
+        System.out.print(ans);
+        actions = new ArrayList<String>();
     }
 
     private String toStringCount(int count){

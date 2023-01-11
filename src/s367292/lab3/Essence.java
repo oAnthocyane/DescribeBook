@@ -15,11 +15,7 @@ public abstract class Essence {
     public Essence(String name){
         this.name = name;
     }
-    public void describe(){
-        String ans = this.name + " " + String.join(", ", actions) + ". ";
-        System.out.print(ans);
-        actions = new ArrayList<String>();
-    }
+    public abstract void describe();
 
     public void setName(String name){
         this.name = name;

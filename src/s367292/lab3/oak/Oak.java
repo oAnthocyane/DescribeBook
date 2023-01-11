@@ -3,6 +3,8 @@ package s367292.lab3.oak;
 import s367292.lab3.Essence;
 import s367292.lab3.room.things.RoomThings;
 
+import java.util.ArrayList;
+
 public class Oak extends Essence {
 
     protected String status1 , status2;
@@ -22,6 +24,13 @@ public class Oak extends Essence {
 
     public void wasFrom(RoomThings from){
         actions.add("был за " + from.getNameInInstrumentalCaseM());
+    }
+
+    @Override
+    public void describe(){
+        String ans = this.name + " " + String.join(", ", actions) + ". ";
+        System.out.print(ans);
+        actions = new ArrayList<String>();
     }
 
 
