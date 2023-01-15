@@ -14,7 +14,9 @@ public class Table extends Furniture{
 
     @Override
     public void describe(){
-        String ans = this.status.substring(0,1).toUpperCase() + this.status.substring(1)  + " " + this.name + " " + String.join(", ", actions) + ", ";
+        String ans = this.status.substring(0,1).toUpperCase() +
+                this.status.substring(1)  + " " + this.name +
+                " " + String.join(", ", actions) + ", ";
         System.out.print(ans);
         actions = new ArrayList<String>();
     }

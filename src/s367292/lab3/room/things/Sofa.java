@@ -7,12 +7,14 @@ public class Sofa extends Table{
         super(name, status);
     }
     public void loacateNear(RoomThings thing){
-        actions.add("помещался возле " + thing.getNameInGenitiveCaseW());
+        actions.add("помещался возле " +
+                thing.getNameInGenitiveCaseW());
     }
 
     @Override
     public void describe(){
-        String ans = this.status + " " + this.name + " " + String.join(", ", actions) + ", ";
+        String ans = this.status + " " + this.name + " " +
+                String.join(", ", actions) + ", ";
         System.out.print(ans);
         actions = new ArrayList<String>();
     }

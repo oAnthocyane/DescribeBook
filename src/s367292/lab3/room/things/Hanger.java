@@ -9,10 +9,12 @@ public class Hanger extends Furniture{
         actions.add("была у " + thing.getNameInGenitiveCaseW());
     }
 
-    public void with(RoomThings thing1, RoomThings thing2, RoomThings thing3,
-                     RoomThings thing4, RoomThings thing5){
-        actions.add("с " + thing1.getName() + " (" + thing2.getName() + ", " +
-                thing3.getName() + ", " + thing4.getName() + " и " +
-                thing5.getName() + ")");
+
+    public void with(RoomThings... things){
+        actions.add("с " + things[0].getName() + " (" + things[1].getName());
+        for(int i =2; i < things.length-1; i++){
+            actions.add(things[i].getName());
+        }
+        actions.add(things[things.length-1].getName() + ")");
     }
 }

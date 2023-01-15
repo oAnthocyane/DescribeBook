@@ -33,7 +33,6 @@ public enum RoomThings {
     public String getNameInDativeCase(){
         return this.name.substring(0, this.name.length()-1) + "у";
     }
-
     public String getNameInInstrumentalCaseW(){
         return this.name.substring(0, this.name.length()-1) + "ой";
     }
