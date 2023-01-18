@@ -3,6 +3,9 @@ package s367292.lab3.people;
 import s367292.lab3.Essence;
 import s367292.lab3.actions.Intonations;
 import s367292.lab3.actions.ThinkActions;
+import s367292.lab3.oak.Oak;
+import s367292.lab3.room.Places;
+import s367292.lab3.room.things.Furniture;
 import s367292.lab3.room.things.RoomThings;
 
 public class Author extends Human{
@@ -27,25 +30,49 @@ public class Author extends Human{
     }
 
 
-    public void wentTo(RoomThings thing){
-        actions.add("подошёл к " + thing.getNameInDativeCase());
+    public void wentTo(Places place){
+        actions.add("подошёл к " + place.getNameInDativeCase());
     }
 
     public void pullBack(RoomThings thing){
         actions.add("отдёрнул " + thing.getNameInDativeCase());
     }
 
-    public void leafe(Intonations intonation, Essence thing){
-        actions.add(intonation.getName() + " полистал " + thing.getName());
+    public void leafe(Intonations intonation, Furniture thing){
+        actions.add(intonation.getName() + " полистал " + thing.getNameInDativeCase());
 
     }
 
-    public void stepBackFrom(RoomThings thing){
-        actions.add("отошёл от " + thing.getNameInGenitiveCaseM());
+    public void stepBackFrom(Places place){
+        actions.add("отошёл от " + place.getNameInGenitiveCaseM());
 
     }
 
-    public void sitOn(RoomThings thing){
+    public void describe(Essence essence){
+        System.out.print(essence.toString().substring(0,1).toUpperCase() + essence.toString().substring(1) + ". ");
+    }
+
+    public void takeThing(Furniture thing, Furniture[] allFurniture){
+        boolean isTaken = false;
+        for(Furniture f : allFurniture){
+            if(thing.equals(f)){
+                take(thing);
+                isTaken = true;
+            }
+        }
+        if(!isTaken) actions.add("не взял " + thing.getNameInDativeCase() + ", потому что не нашёл в комнате");
+    }
+
+    public Furniture returnThing(Furniture thing){
+        actions.add("положил " + thing.getNameInDativeCase());
+        return thing;
+    }
+
+    public void take(Furniture thing){
+        actions.add("взял " + thing.getNameInDativeCase());
+    }
+
+    public void sitOn(Furniture thing){
         actions.add("сел на " + thing.getName());
     }
 
@@ -93,6 +120,8 @@ public class Author extends Human{
     public void lay(){
         actions.add("и лёг");
     }
+
+
 
     class Back{
         public String hurts(){

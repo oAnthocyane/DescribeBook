@@ -1,11 +1,16 @@
 package s367292.lab3.room.things;
 
-public class Chair extends Table{
-    public Chair(String name, String status){
-        super(name, status);
+public class Chair extends Furniture{
+    private Furniture furniture;
+    public Chair(String name, String status, Furniture furniture){
+        super(name);
+        this.status = status;
+        this.furniture = furniture;
     }
 
-    public void stayInFrontOf(Furniture furniture){
-        actions.add("стоял перед " + furniture.getNameInInstrumentalCaseM());
+    @Override
+    public String toString(){
+        return this.status + " " + this.name + " был напротив " + this.furniture.getNameInGenitiveCase();
     }
+
 }

@@ -15,7 +15,7 @@ public abstract class Essence {
     public Essence(String name){
         this.name = name;
     }
-    public abstract void describe();
+
 
     public void setName(String name){
         this.name = name;

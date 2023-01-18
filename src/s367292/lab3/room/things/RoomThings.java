@@ -2,23 +2,13 @@ package s367292.lab3.room.things;
 
 
 public enum RoomThings {
-
-    ROOM("комнат"),
-    WINDOW("окно"),
-    SOFA("диван"),
-    WALL("стена"),
     WINDOWSILL("подоконник"),
-    TRESHOLD("порог"),
-    ANOTHERWALL("другой стена"),
     JUNK("рухлядью"),
     WADERS("ватники"),
-    CORNER("углы"),
     POPPEDCOATS("вылезшие шубы"),
     TATTEREDCAPS("драные кепки"),
     EARFLAPS("ушанки"),
-    FRESHWASH("свежей побелкой"),
     SHABBYFRAME("облезлой раме"),
-    STRIPEDMATS("полосатыми половиками"),
     CURTAIN("занавеска");
 
     private String name;
@@ -48,6 +38,9 @@ public enum RoomThings {
     public String getNameInGenitiveCaseW(){
         return this.name.substring(0, this.name.length()-1) + "ы";
     }
+
+
+
 
 }
 

@@ -2,12 +2,12 @@ package s367292.lab3;
 
 import s367292.lab3.actions.Intonations;
 import s367292.lab3.actions.ThinkActions;
-import s367292.lab3.oak.Roots;
 import s367292.lab3.people.Author;
 import s367292.lab3.people.Human;
 import s367292.lab3.people.OldWoman;
 import s367292.lab3.people.Roman;
 import s367292.lab3.oak.Bark;
+import s367292.lab3.room.Places;
 import s367292.lab3.room.things.Book;
 import s367292.lab3.oak.Oak;
 import s367292.lab3.room.things.RoomThings;
@@ -15,24 +15,23 @@ import s367292.lab3.room.things.*;
 
 public class Main {
     public static void main(String[] args) {
-
         Roman roman = new Roman("Роман", 5);
         OldWoman oldWoman = new OldWoman("старуха", 5);
         Author author = new Author("Я");
-        Furniture furniture = new Furniture("Мебели");
-        Table table = new Table("стол", "массивный");
-        TableCloth tableCloth = new TableCloth("скатертью", "ветхой", "серой", "бахромой");
-        Chair chair = new Chair("табурет", "колченогий");
-        Sofa sofa = new Sofa("диван", "обширный");
-        Hanger hanger = new Hanger("вешалка");
-        Oven oven = new Oven("печь", "большая", "русская");
-        Mirror mirror = new Mirror("зеркало", "большое", "мутное");
-        Floor floor = new Floor("Пол");
-        Book book = new Book("Книга", "засаленная", "пухлая");
-        Oak oak = new Oak("Дуб", "очень древнее", "растение");
-        Bark bark = new Bark("Кора", "серая", "мёртвая");
-        Oak lichen = new Oak("лишайник", "красным", "белым");
-        Roots roots = new Roots("корни", "чудовищные", "вылезшие из земли");
+        Table table = new Table("стол", "массивный", Places.WINDOW);
+        Chair chair = new Chair("табурет", "колченогий", table);
+        Sofa sofa = new Sofa("диван", "обширный", Places.WALL);
+        Hanger hanger = new Hanger("вешалка",Places.ANOTHERWALL, RoomThings.JUNK, RoomThings.WADERS, RoomThings.POPPEDCOATS,
+                RoomThings.TATTEREDCAPS, RoomThings.EARFLAPS);
+        Oven oven = new Oven("печь", "большая", "русская", Places.BEDROOM);
+        Mirror mirror = new Mirror("зеркало", "большое", "мутное", Places.CORNER, RoomThings.SHABBYFRAME);
+        Floor floor = new Floor("пол", "выскоблен");
+        Book book = new Book("книга", "засаленная", "пухлая", RoomThings.WINDOWSILL);
+        Furniture[] allfurniture = new Furniture[]{table, chair, sofa, hanger, oven,
+                mirror, floor, book};
+        Furniture furniture = new Furniture("мебели", Places.BEDROOM, allfurniture.length);
+        Oak oak = new Oak("дуб", "очень древнее", "растение", Places.WINDOW);
+        Bark bark = new Bark("кора", "серая", "мёртвая", oak);
         Human volodya = new Human("Володя");
 
         roman.say("Не цыкают! Говорят вам - зубов нет.");
@@ -47,67 +46,55 @@ public class Main {
         roman.describe();
         author.lookAround();
         author.describe();
-        furniture.was(RoomThings.ROOM, 4);
-        furniture.describe();
-        table.stayAt(RoomThings.WINDOW);
-        tableCloth.on(table);
-        table.describe();
-        tableCloth.describe();
-        chair.stayInFrontOf(table);
-        chair.describe();
-        sofa.loacateNear(RoomThings.WALL);
-        sofa.describe();
-        hanger.wasAt(RoomThings.ANOTHERWALL);
-        hanger.with(RoomThings.JUNK, RoomThings.WADERS, RoomThings.POPPEDCOATS,
-                RoomThings.TATTEREDCAPS, RoomThings.EARFLAPS);
-        hanger.describe();
-        oven.wentInto(RoomThings.ROOM);
-        oven.shine(RoomThings.FRESHWASH);
-        oven.describe();
-        mirror.hangInFrontOf(RoomThings.CORNER, RoomThings.SHABBYFRAME);
-        mirror.describe();
-        floor.scrape();
-        floor.cover(RoomThings.STRIPEDMATS);
-        floor.describe();
+        author.describe(furniture);
+        for (Furniture f : allfurniture) {
+            author.describe(f);
+        }
         System.out.println("\n");
 
         roman.babble();
+        oldWoman.reductionHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        roman.reductionHappinies(oldWoman.getHappinies(), oldWoman.getVoiceLevel());
         oldWoman.babble();
+        oldWoman.reductionHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        roman.reductionHappinies(oldWoman.getHappinies(), oldWoman.getVoiceLevel());
         roman.describe();
         oldWoman.describe();
-        roman.increaceVoice();
+        roman.increaceVoice(1);
+        oldWoman.reductionHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        roman.reductionHappinies(oldWoman.getHappinies(), oldWoman.getVoiceLevel());
         roman.describe();
-        roman.reductionVoice();
+        roman.reductionVoice(1);
+        roman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        oldWoman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
         roman.describe();
+        roman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        oldWoman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
         oldWoman.say("Скатерть, инвентарный номер двести сорок пять...");
         roman.say("Вы еще каждую половицу запишите!..");
+        oldWoman.reductionHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        roman.reductionHappinies(oldWoman.getHappinies(), oldWoman.getVoiceLevel());
         oldWoman.say("Стол обеденный...");
         roman.say("Печь вы тоже запишите?");
         oldWoman.say("Порядок нужен... Диван...");
+        roman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
+        oldWoman.increaseHappinies(roman.getHappinies(), roman.getVoiceLevel());
         System.out.println();
-
-        author.wentTo(RoomThings.WINDOW);
+        author.wentTo(Places.WINDOW);
         author.pullBack(RoomThings.CURTAIN);
         author.describe();
-        oak.wasFrom(RoomThings.WINDOW);
-        oak.describe();
+        author.describe(oak);
         author.watchOn(oak);
         author.describe();
-        oak.setName("Это");
-        oak.was();
-        oak.describe();
-        oak.setName("дуб");
-        bark.wasOn(oak);
-        bark.describe();
-        roots.cover(lichen);
-        roots.describe();
-        roman.say("И ещё дуб запишите!", "за", RoomThings.WALL);
-        book.layOn(RoomThings.WINDOWSILL);
-        book.describe();
-        book.setName("её");
+        author.describe(bark);
+        roman.say("И ещё дуб запишите!", "за", Places.WALL);
+        author.describe(book);
+        author.takeThing(book, allfurniture);
         author.leafe(Intonations.MINDLESSLY, book);
-        author.stepBackFrom(RoomThings.WINDOW);
-        author.sitOn(RoomThings.SOFA);
+        author.returnThing(book);
+        author.describe();
+        author.stepBackFrom(Places.WINDOW);
+        author.sitOn(sofa);
         author.describe();
         author.setName("Мне");
         author.want(ThinkActions.SLEEP);
@@ -125,7 +112,7 @@ public class Main {
         System.out.println("\n");
 
         author.setName("я");
-        roman.say("Ну вот,", "на", RoomThings.TRESHOLD);
+        roman.say("Ну вот,", "на", Places.TRESHOLD);
         roman.say("Формальности окончены.");
         roman.wiggleHand();
         roman.describe();

@@ -1,20 +1,28 @@
 package s367292.lab3.room.things;
 
+import s367292.lab3.room.Places;
+
 public class Hanger extends Furniture{
-    public Hanger(String name){
+    private RoomThings[] withThings;
+    public Hanger(String name, Places location, RoomThings... withThings){
         super(name);
+        this.location = location;
+        this.withThings = withThings;
     }
 
-    public void wasAt(RoomThings thing){
-        actions.add("была у " + thing.getNameInGenitiveCaseW());
+    @Override
+    public String toString(){
+        return this.name + " была на " + this.location.getNameInPrepositionalCase() + " " + with(withThings);
     }
 
 
-    public void with(RoomThings... things){
-        actions.add("с " + things[0].getName() + " (" + things[1].getName());
-        for(int i =2; i < things.length-1; i++){
-            actions.add(things[i].getName());
+    private String with(RoomThings... things){
+        String ans = "";
+        ans += "с " + things[0].getName() + " (" + things[1].getName();
+        for(int i =2; i < things.length; i++){
+            ans += ", " + things[i].getName();
         }
-        actions.add(things[things.length-1].getName() + ")");
+        ans += ")";
+        return ans;
     }
 }

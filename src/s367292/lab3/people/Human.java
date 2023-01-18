@@ -19,7 +19,6 @@ public class Human extends Essence {
         System.out.println("- " + phrase + " - сказал " + this.name + ".");
     }
 
-    @Override
     public void describe(){
         String ans = this.name + " " + String.join(", ", actions) + ". ";
         System.out.print(ans);

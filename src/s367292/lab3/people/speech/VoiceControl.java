@@ -1,8 +1,9 @@
 package s367292.lab3.people.speech;
 
 public interface VoiceControl {
-    void increaceVoice();
-    void reductionVoice();
+    void increaceVoice(int step);
+    void reductionVoice(int step);
     void setVoiceLevel(int voiceLevel);
+    int getVoiceLevel();
     void babble();
 }

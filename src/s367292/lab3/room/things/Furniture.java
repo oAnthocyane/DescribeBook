@@ -1,37 +1,45 @@
 package s367292.lab3.room.things;
 
 import s367292.lab3.Essence;
+import s367292.lab3.room.Places;
 
-import java.util.ArrayList;
 
 public class Furniture extends Essence {
 
     protected String status;
+    private int countFurniture;
+    protected Places location;
 
     public Furniture(String name){
         super(name);
     }
-    public Furniture(String name, String status){
+    public Furniture(String name, String status, Places location){
         super(name);
         this.status = status;
+        this.location = location;
     }
+    public Furniture(String name, Places location, int countFurniture){
+        super(name);
+        this.location = location;
+        this.countFurniture = countFurniture;
 
-    public void was(RoomThings place, int count){
-        String stringCount = toStringCount(count);
-        actions.add("в " + place.getNameInPrepositionalCase() + " было " + stringCount);
     }
 
     @Override
-    public void describe(){
-        String ans = this.name + " " + String.join(", ", actions) + ". ";
-        System.out.print(ans);
-        actions = new ArrayList<String>();
+    public String toString(){
+        return this.name + " в " + this.location.getName() + " было " + toStringCount(this.countFurniture);
     }
 
     private String toStringCount(int count){
 
-        if(count < 5) return "немного";
-        else if (count < 10) return "нормально";
+        if(count < 10) return "немного";
+        else if (count < 20) return "нормально";
         return "много";
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        Furniture f = (Furniture) obj;
+        return name.equals(f.name) && location == f.location;
     }
 }
