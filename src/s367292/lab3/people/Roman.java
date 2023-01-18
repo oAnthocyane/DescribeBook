@@ -82,7 +82,6 @@ public class Roman extends Human implements VoiceControl, ControlHappinies {
 
         }
     }
-    @Override
     public int getVoiceLevel(){
         return this.voiceLevel;
     }

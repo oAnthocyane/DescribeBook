@@ -4,6 +4,5 @@ public interface VoiceControl {
     void increaceVoice(int step);
     void reductionVoice(int step);
     void setVoiceLevel(int voiceLevel);
-    int getVoiceLevel();
     void babble();
 }

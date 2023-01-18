@@ -72,7 +72,6 @@ public class OldWoman extends Human implements VoiceControl, ControlHappinies {
             error.printStackTrace();
         }
     }
-    @Override
     public int getVoiceLevel(){
         return this.voiceLevel;
     }

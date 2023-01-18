@@ -8,7 +8,7 @@ public class Furniture extends Essence {
 
     protected String status;
     private int countFurniture;
-    protected Places location;
+    protected Places location=Places.BEDROOM;
 
     public Furniture(String name){
         super(name);
@@ -38,8 +38,14 @@ public class Furniture extends Essence {
     }
 
     @Override
+    public int hashCode(){
+        return name.hashCode()*29 + location.toString().hashCode()*31;
+    }
+    @Override
     public boolean equals(Object obj){
         Furniture f = (Furniture) obj;
-        return name.equals(f.name) && location == f.location;
+        return this.hashCode() == f.hashCode();
     }
+
+
 }

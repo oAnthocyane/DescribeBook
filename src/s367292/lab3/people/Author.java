@@ -3,7 +3,6 @@ package s367292.lab3.people;
 import s367292.lab3.Essence;
 import s367292.lab3.actions.Intonations;
 import s367292.lab3.actions.ThinkActions;
-import s367292.lab3.oak.Oak;
 import s367292.lab3.room.Places;
 import s367292.lab3.room.things.Furniture;
 import s367292.lab3.room.things.RoomThings;

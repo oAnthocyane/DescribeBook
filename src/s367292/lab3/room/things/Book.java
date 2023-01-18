@@ -1,9 +1,5 @@
 package s367292.lab3.room.things;
 
-
-
-
-
 public class Book extends Furniture {
 
     private String status1, status2;
