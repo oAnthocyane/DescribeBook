@@ -15,8 +15,9 @@ import s367292.lab3.room.things.*;
 
 public class Main {
     public static void main(String[] args) {
-        Roman roman = new Roman("Роман", 5);
-        OldWoman oldWoman = new OldWoman("старуха", 5);
+        final int  NORMAL_VOICE_LEVEL = 5;
+        Roman roman = new Roman("Роман", NORMAL_VOICE_LEVEL);
+        OldWoman oldWoman = new OldWoman("старуха", NORMAL_VOICE_LEVEL);
         Author author = new Author("Я");
         Table table = new Table("стол", "массивный", Places.WINDOW);
         Chair chair = new Chair("табурет", "колченогий", table);
@@ -27,13 +28,12 @@ public class Main {
         Mirror mirror = new Mirror("зеркало", "большое", "мутное", Places.CORNER, RoomThings.SHABBYFRAME);
         Floor floor = new Floor("пол", "выскоблен");
         Book book = new Book("книга", "засаленная", "пухлая", RoomThings.WINDOWSILL);
-        Furniture[] allfurniture = new Furniture[]{table, chair, sofa, hanger, oven,
-                mirror, floor, book};
-        Furniture furniture = new Furniture("мебели", Places.BEDROOM, allfurniture.length);
+        System.out.println(RoomThings.values().getClass());
+        Furniture[] allFurniture = new Furniture[]{table, chair, sofa, hanger, oven, mirror, floor, book};
+        Furniture furniture = new Furniture("мебели", Places.BEDROOM, allFurniture.length);
         Oak oak = new Oak("дуб", "очень древнее", "растение", Places.WINDOW);
         Bark bark = new Bark("кора", "серая", "мёртвая", oak);
         Human volodya = new Human("Володя");
-
         roman.say("Не цыкают! Говорят вам - зубов нет.");
         oldWoman.say("Тогда пойдём, расписочку напишем...");
         System.out.println();
@@ -47,7 +47,7 @@ public class Main {
         author.lookAround();
         author.describe();
         author.describe(furniture);
-        for (Furniture f : allfurniture) {
+        for (Furniture f : allFurniture) {
             author.describe(f);
         }
         System.out.println("\n");
@@ -89,7 +89,7 @@ public class Main {
         author.describe(bark);
         roman.say("И ещё дуб запишите!", "за", Places.WALL);
         author.describe(book);
-        author.takeThing(book, allfurniture);
+        author.takeThing(book, allFurniture);
         author.leafe(Intonations.MINDLESSLY, book);
         author.returnThing(book);
         author.describe();
